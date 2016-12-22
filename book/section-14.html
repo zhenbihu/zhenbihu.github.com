@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>数据科学家：R语言</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="This is my first book on data science">
+  <meta name="generator" content="bookdown 0.1 and GitBook 2.6.7">
+
+  <meta property="og:title" content="数据科学家：R语言" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is my first book on data science" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="数据科学家：R语言" />
+  
+  <meta name="twitter:description" content="This is my first book on data science" />
+  
+
+<meta name="author" content="林荟">
+
+<meta name="date" content="2016-11-01">
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="section-13.html">
+<link rel="next" href="references.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">数据科学家：R语言</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> 介绍</a></li>
+<li class="chapter" data-level="2" data-path="section-2.html"><a href="section-2.html"><i class="fa fa-check"></i><b>2</b> 数据科学</a><ul>
+<li class="chapter" data-level="2.1" data-path="section-2.html"><a href="section-2.html#section-2.1"><i class="fa fa-check"></i><b>2.1</b> 什么是数据科学？</a></li>
+<li class="chapter" data-level="2.2" data-path="section-2.html"><a href="section-2.html#section-2.2"><i class="fa fa-check"></i><b>2.2</b> 什么是数据科学家？</a></li>
+<li class="chapter" data-level="2.3" data-path="section-2.html"><a href="section-2.html#section-2.3"><i class="fa fa-check"></i><b>2.3</b> 数据科学家需要的技能</a></li>
+<li class="chapter" data-level="2.4" data-path="section-2.html"><a href="section-2.html#section-2.4"><i class="fa fa-check"></i><b>2.4</b> 数据科学可以解决什么问题？</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="section-2.html"><a href="section-2.html#section-2.4.1"><i class="fa fa-check"></i><b>2.4.1</b> 前提要求</a></li>
+<li class="chapter" data-level="2.4.2" data-path="section-2.html"><a href="section-2.html#section-2.4.2"><i class="fa fa-check"></i><b>2.4.2</b> 问题种类</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="section-3.html"><a href="section-3.html"><i class="fa fa-check"></i><b>3</b> 数据集模拟和背景介绍</a><ul>
+<li class="chapter" data-level="3.1" data-path="section-3.html"><a href="section-3.html#section-3.1"><i class="fa fa-check"></i><b>3.1</b> 服装消费者数据</a></li>
+<li class="chapter" data-level="3.2" data-path="section-3.html"><a href="section-3.html#section-3.2"><i class="fa fa-check"></i><b>3.2</b> 航空公司满意度调查</a></li>
+<li class="chapter" data-level="3.3" data-path="section-3.html"><a href="section-3.html#section-3.3"><i class="fa fa-check"></i><b>3.3</b> 生猪疫情风险预测数据</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="section-4.html"><a href="section-4.html"><i class="fa fa-check"></i><b>4</b> 数据分析一般流程</a><ul>
+<li class="chapter" data-level="4.1" data-path="section-4.html"><a href="section-4.html#section-4.1"><i class="fa fa-check"></i><b>4.1</b> 问题到数据</a></li>
+<li class="chapter" data-level="4.2" data-path="section-4.html"><a href="section-4.html#section-4.2"><i class="fa fa-check"></i><b>4.2</b> 数据到信息</a></li>
+<li class="chapter" data-level="4.3" data-path="section-4.html"><a href="section-4.html#section-4.3"><i class="fa fa-check"></i><b>4.3</b> 信息到行动</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="section-5.html"><a href="section-5.html"><i class="fa fa-check"></i><b>5</b> 数据预处理</a><ul>
+<li class="chapter" data-level="5.1" data-path="section-5.html"><a href="section-5.html#section-5.1"><i class="fa fa-check"></i><b>5.1</b> 介绍</a></li>
+<li class="chapter" data-level="5.2" data-path="section-5.html"><a href="section-5.html#section-5.2"><i class="fa fa-check"></i><b>5.2</b> 数据清理</a></li>
+<li class="chapter" data-level="5.3" data-path="section-5.html"><a href="section-5.html#section-5.3"><i class="fa fa-check"></i><b>5.3</b> 缺失值填补</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="section-5.html"><a href="section-5.html#section-5.3.1"><i class="fa fa-check"></i><b>5.3.1</b> 中位数或众数填补</a></li>
+<li class="chapter" data-level="5.3.2" data-path="section-5.html"><a href="section-5.html#k-"><i class="fa fa-check"></i><b>5.3.2</b> K-近邻填补</a></li>
+<li class="chapter" data-level="5.3.3" data-path="section-5.html"><a href="section-5.html#section-5.3.3"><i class="fa fa-check"></i><b>5.3.3</b> 袋状树填补</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="section-5.html"><a href="section-5.html#section-5.4"><i class="fa fa-check"></i><b>5.4</b> 中心化和标量化</a></li>
+<li class="chapter" data-level="5.5" data-path="section-5.html"><a href="section-5.html#section-5.5"><i class="fa fa-check"></i><b>5.5</b> 有偏分布</a></li>
+<li class="chapter" data-level="5.6" data-path="section-5.html"><a href="section-5.html#section-5.6"><i class="fa fa-check"></i><b>5.6</b> 处理离群点</a></li>
+<li class="chapter" data-level="5.7" data-path="section-5.html"><a href="section-5.html#section-5.7"><i class="fa fa-check"></i><b>5.7</b> 共线性</a></li>
+<li class="chapter" data-level="5.8" data-path="section-5.html"><a href="section-5.html#section-5.8"><i class="fa fa-check"></i><b>5.8</b> 稀疏变量</a></li>
+<li class="chapter" data-level="5.9" data-path="section-5.html"><a href="section-5.html#section-5.9"><i class="fa fa-check"></i><b>5.9</b> 编码名义变量</a></li>
+<li class="chapter" data-level="5.10" data-path="section-5.html"><a href="section-5.html#section-5.10"><i class="fa fa-check"></i><b>5.10</b> 本章总结</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="section-6.html"><a href="section-6.html"><i class="fa fa-check"></i><b>6</b> 数据操作</a><ul>
+<li class="chapter" data-level="6.1" data-path="section-6.html"><a href="section-6.html#section-6.1"><i class="fa fa-check"></i><b>6.1</b> 数据读写</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="section-6.html"><a href="section-6.html#tibble"><i class="fa fa-check"></i><b>6.1.1</b> 取代传统数据框的<code>tibble</code>对象</a></li>
+<li class="chapter" data-level="6.1.2" data-path="section-6.html"><a href="section-6.html#readr"><i class="fa fa-check"></i><b>6.1.2</b> 高效数据读写：<code>readr</code>包</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="section-6.html"><a href="section-6.html#section-6.2"><i class="fa fa-check"></i><b>6.2</b> 数据整合</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="section-6.html"><a href="section-6.html#baseapply"><i class="fa fa-check"></i><b>6.2.1</b> base包：apply()</a></li>
+<li class="chapter" data-level="6.2.2" data-path="section-6.html"><a href="section-6.html#plyrddply"><i class="fa fa-check"></i><b>6.2.2</b> plyr包：ddply()函数</a></li>
+<li class="chapter" data-level="6.2.3" data-path="section-6.html"><a href="section-6.html#dplyr"><i class="fa fa-check"></i><b>6.2.3</b> dplyr包</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="section-6.html"><a href="section-6.html#section-6.3"><i class="fa fa-check"></i><b>6.3</b> 数据整形</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="section-6.html"><a href="section-6.html#reshape2"><i class="fa fa-check"></i><b>6.3.1</b> <code>reshape2</code>包</a></li>
+<li class="chapter" data-level="6.3.2" data-path="section-6.html"><a href="section-6.html#tidyr"><i class="fa fa-check"></i><b>6.3.2</b> <code>tidyr</code>包</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="section-6.html"><a href="section-6.html#-1"><i class="fa fa-check"></i><b>6.4</b> 本章总结</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="section-7.html"><a href="section-7.html"><i class="fa fa-check"></i><b>7</b> 基础建模技术</a><ul>
+<li class="chapter" data-level="7.1" data-path="section-7.html"><a href="section-7.html#section-7.1"><i class="fa fa-check"></i><b>7.1</b> 有监督和无监督</a></li>
+<li class="chapter" data-level="7.2" data-path="section-7.html"><a href="section-7.html#section-7.2"><i class="fa fa-check"></i><b>7.2</b> 误差及其来源</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="section-7.html"><a href="section-7.html#section-7.2.1"><i class="fa fa-check"></i><b>7.2.1</b> 系统误差和随机误差</a></li>
+<li class="chapter" data-level="7.2.2" data-path="section-7.html"><a href="section-7.html#section-7.2.2"><i class="fa fa-check"></i><b>7.2.2</b> 应变量误差</a></li>
+<li class="chapter" data-level="7.2.3" data-path="section-7.html"><a href="section-7.html#section-7.2.3"><i class="fa fa-check"></i><b>7.2.3</b> 自变量误差</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="section-7.html"><a href="section-7.html#section-7.3"><i class="fa fa-check"></i><b>7.3</b> 数据划分和再抽样</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="section-7.html"><a href="section-7.html#section-7.3.1"><i class="fa fa-check"></i><b>7.3.1</b> 划分训练集和测试集</a></li>
+<li class="chapter" data-level="7.3.2" data-path="section-7.html"><a href="section-7.html#section-7.3.2"><i class="fa fa-check"></i><b>7.3.2</b> 重抽样</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="section-7.html"><a href="section-7.html#-2"><i class="fa fa-check"></i><b>7.4</b> 本章总结</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="section-8.html"><a href="section-8.html"><i class="fa fa-check"></i><b>8</b> 模型评估度量</a><ul>
+<li class="chapter" data-level="8.1" data-path="section-8.html"><a href="section-8.html#section-8.1"><i class="fa fa-check"></i><b>8.1</b> 回归模型评估度量</a></li>
+<li class="chapter" data-level="8.2" data-path="section-8.html"><a href="section-8.html#section-8.2"><i class="fa fa-check"></i><b>8.2</b> 分类模型评估度量</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="section-8.html"><a href="section-8.html#kappa"><i class="fa fa-check"></i><b>8.2.1</b> Kappa统计量</a></li>
+<li class="chapter" data-level="8.2.2" data-path="section-8.html"><a href="section-8.html#roc"><i class="fa fa-check"></i><b>8.2.2</b> ROC曲线</a></li>
+<li class="chapter" data-level="8.2.3" data-path="section-8.html"><a href="section-8.html#section-8.2.3"><i class="fa fa-check"></i><b>8.2.3</b> 提升图</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="section-8.html"><a href="section-8.html#-3"><i class="fa fa-check"></i><b>8.3</b> 本章总结</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="section-9.html"><a href="section-9.html"><i class="fa fa-check"></i><b>9</b> 特征工程</a><ul>
+<li class="chapter" data-level="9.1" data-path="section-9.html"><a href="section-9.html#section-9.1"><i class="fa fa-check"></i><b>9.1</b> 特征构建</a></li>
+<li class="chapter" data-level="9.2" data-path="section-9.html"><a href="section-9.html#section-9.2"><i class="fa fa-check"></i><b>9.2</b> 特征提取</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="section-9.html"><a href="section-9.html#section-9.2.1"><i class="fa fa-check"></i><b>9.2.1</b> 初步探索数据</a></li>
+<li class="chapter" data-level="9.2.2" data-path="section-9.html"><a href="section-9.html#section-9.2.2"><i class="fa fa-check"></i><b>9.2.2</b> 主成分分析</a></li>
+<li class="chapter" data-level="9.2.3" data-path="section-9.html"><a href="section-9.html#section-9.2.3"><i class="fa fa-check"></i><b>9.2.3</b> 探索性因子分析</a></li>
+<li class="chapter" data-level="9.2.4" data-path="section-9.html"><a href="section-9.html#section-9.2.4"><i class="fa fa-check"></i><b>9.2.4</b> 高维标度化</a></li>
+<li class="chapter" data-level="9.2.5" data-path="section-9.html"><a href="section-9.html#section-9.2.5"><i class="fa fa-check"></i><b>9.2.5</b> 知识扩展</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="section-9.html"><a href="section-9.html#section-9.3"><i class="fa fa-check"></i><b>9.3</b> 特征选择</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="section-9.html"><a href="section-9.html#section-9.3.1"><i class="fa fa-check"></i><b>9.3.1</b> 过滤法</a></li>
+<li class="chapter" data-level="9.3.2" data-path="section-9.html"><a href="section-9.html#section-9.3.2"><i class="fa fa-check"></i><b>9.3.2</b> 绕封法</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="section-10.html"><a href="section-10.html"><i class="fa fa-check"></i><b>10</b> 线性回归极其衍生</a><ul>
+<li class="chapter" data-level="10.1" data-path="section-10.html"><a href="section-10.html#section-10.1"><i class="fa fa-check"></i><b>10.1</b> 普通线性回归</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="section-10.html"><a href="section-10.html#section-10.1.1"><i class="fa fa-check"></i><b>10.1.1</b> 最小二乘线性模型</a></li>
+<li class="chapter" data-level="10.1.2" data-path="section-10.html"><a href="section-10.html#section-10.1.2"><i class="fa fa-check"></i><b>10.1.2</b> 回归诊断</a></li>
+<li class="chapter" data-level="10.1.3" data-path="section-10.html"><a href="section-10.html#section-10.1.3"><i class="fa fa-check"></i><b>10.1.3</b> 离群点，高杠杆点和强影响点</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="section-10.html"><a href="section-10.html#section-10.2"><i class="fa fa-check"></i><b>10.2</b> 收缩方法</a><ul>
+<li class="chapter" data-level="10.2.1" data-path="section-10.html"><a href="section-10.html#section-10.2.1"><i class="fa fa-check"></i><b>10.2.1</b> 岭回归</a></li>
+<li class="chapter" data-level="10.2.2" data-path="section-10.html"><a href="section-10.html#lasso"><i class="fa fa-check"></i><b>10.2.2</b> Lasso</a></li>
+<li class="chapter" data-level="10.2.3" data-path="section-10.html"><a href="section-10.html#section-10.2.3"><i class="fa fa-check"></i><b>10.2.3</b> 弹性网络</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="section-10.html"><a href="section-10.html#lasso"><i class="fa fa-check"></i><b>10.3</b> 知识扩展：Lasso的变量选择功能</a></li>
+<li class="chapter" data-level="10.4" data-path="section-10.html"><a href="section-10.html#section-10.4"><i class="fa fa-check"></i><b>10.4</b> 主成分和偏最小二乘回归</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="section-11.html"><a href="section-11.html"><i class="fa fa-check"></i><b>11</b> 广义线性模型压缩方法</a><ul>
+<li class="chapter" data-level="11.1" data-path="section-11.html"><a href="section-11.html#glmnet"><i class="fa fa-check"></i><b>11.1</b> 初识<code>glmnet</code></a></li>
+<li class="chapter" data-level="11.2" data-path="section-11.html"><a href="section-11.html#section-11.2"><i class="fa fa-check"></i><b>11.2</b> 收缩线性回归</a></li>
+<li class="chapter" data-level="11.3" data-path="section-11.html"><a href="section-11.html#section-11.3"><i class="fa fa-check"></i><b>11.3</b> 逻辑回归</a><ul>
+<li class="chapter" data-level="11.3.1" data-path="section-11.html"><a href="section-11.html#section-11.3.1"><i class="fa fa-check"></i><b>11.3.1</b> 普通逻辑回归</a></li>
+<li class="chapter" data-level="11.3.2" data-path="section-11.html"><a href="section-11.html#section-11.3.2"><i class="fa fa-check"></i><b>11.3.2</b> 收缩逻辑回归</a></li>
+<li class="chapter" data-level="11.3.3" data-path="section-10.html"><a href="section-10.html#lasso"><i class="fa fa-check"></i><b>11.3.3</b> 知识扩展：群组lasso逻辑回归</a></li>
+</ul></li>
+<li class="chapter" data-level="11.4" data-path="section-11.html"><a href="section-11.html#section-11.4"><i class="fa fa-check"></i><b>11.4</b> 收缩多项回归</a></li>
+<li class="chapter" data-level="11.5" data-path="section-11.html"><a href="section-11.html#section-11.5"><i class="fa fa-check"></i><b>11.5</b> 泊松收缩回归</a></li>
+<li class="chapter" data-level="11.6" data-path="section-11.html"><a href="section-11.html#-4"><i class="fa fa-check"></i><b>11.6</b> 本章总结</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="section-12.html"><a href="section-12.html"><i class="fa fa-check"></i><b>12</b> 树模型</a><ul>
+<li class="chapter" data-level="12.1" data-path="section-12.html"><a href="section-12.html#section-12.1"><i class="fa fa-check"></i><b>12.1</b> 分裂准则</a></li>
+<li class="chapter" data-level="12.2" data-path="section-12.html"><a href="section-12.html#section-12.2"><i class="fa fa-check"></i><b>12.2</b> 树的修剪</a></li>
+<li class="chapter" data-level="12.3" data-path="section-12.html"><a href="section-12.html#section-12.3"><i class="fa fa-check"></i><b>12.3</b> 回归树和决策树</a><ul>
+<li class="chapter" data-level="12.3.1" data-path="section-12.html"><a href="section-12.html#section-12.3.1"><i class="fa fa-check"></i><b>12.3.1</b> 回归树</a></li>
+<li class="chapter" data-level="12.3.2" data-path="section-12.html"><a href="section-12.html#section-12.3.2"><i class="fa fa-check"></i><b>12.3.2</b> 决策树</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="section-12.html"><a href="section-12.html#section-12.4"><i class="fa fa-check"></i><b>12.4</b> 装袋树</a></li>
+<li class="chapter" data-level="12.5" data-path="section-12.html"><a href="section-12.html#section-12.5"><i class="fa fa-check"></i><b>12.5</b> 随机森林</a></li>
+<li class="chapter" data-level="12.6" data-path="section-12.html"><a href="section-12.html#boosting"><i class="fa fa-check"></i><b>12.6</b> 助推（Boosting）</a></li>
+<li class="chapter" data-level="12.7" data-path="section-12.html"><a href="section-12.html#section-12.7"><i class="fa fa-check"></i><b>12.7</b> 其它树话题</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="section-13.html"><a href="section-13.html"><i class="fa fa-check"></i><b>13</b> 聚类判别分析</a><ul>
+<li class="chapter" data-level="13.1" data-path="section-13.html"><a href="section-13.html#section-13.1"><i class="fa fa-check"></i><b>13.1</b> 聚类分析</a></li>
+<li class="chapter" data-level="13.2" data-path="section-13.html"><a href="section-13.html#section-13.2"><i class="fa fa-check"></i><b>13.2</b> 判别分析</a><ul>
+<li class="chapter" data-level="13.2.1" data-path="section-13.html"><a href="section-13.html#section-13.2.1"><i class="fa fa-check"></i><b>13.2.1</b> 线性判别分析</a></li>
+<li class="chapter" data-level="13.2.2" data-path="section-13.html"><a href="section-13.html#section-13.2.2"><i class="fa fa-check"></i><b>13.2.2</b> 最小二乘判别分析</a></li>
+<li class="chapter" data-level="13.2.3" data-path="section-13.html"><a href="section-13.html#section-13.2.3"><i class="fa fa-check"></i><b>13.2.3</b> 朴素贝叶斯</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="section-13.html"><a href="section-13.html#section-13.3"><i class="fa fa-check"></i><b>13.3</b> 案例：客户分组</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="section-14.html"><a href="section-14.html"><i class="fa fa-check"></i><b>14</b> 深度学习</a><ul>
+<li class="chapter" data-level="14.1" data-path="section-6.html"><a href="section-6.html#-1"><i class="fa fa-check"></i><b>14.1</b> 介绍</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>15</b> References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">数据科学家：R语言</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="section-14" class="section level1">
+<h1><span class="header-section-number">第14章</span> 深度学习</h1>
+<div id="-1" class="section level2">
+<h2><span class="header-section-number">14.1</span> 介绍</h2>
+<p>深度神经网络（Deep Neural Network [DNN]）是人工智能神经网络（Artificial Neural Network [ANN]）的一种。DNN比ANN有更多的隐层级。和ANN一样，DNN也可以对复杂的非线性关系建模。DNN最主要的应用是图像物体识别，其本质上是一个组合模型，将图形对象当成许多基本图像元素层级叠加的结果。额外的层级使得模型能够包含更低层级的特征。 DNN的设计主要是前馈网络（feedforward networks）但也有成功应用递归神经网络（recurrent neural networks）的研究，尤其是LSTM，其主要应用于自然语言处理。卷积深度神经网络（Convolutional deep neural networks [CNNs]）成功的应用在计算机视觉方面。CNNs在声学模型（比如自动话语识别）上的效果也超过其它模型。 我们会在这一章中简要介绍下深度学习。在此之前，我们得先从浅度学习开始。</p>
+<p>历史</p>
+<p>可能大部分人都不会想到，最早的神经网络实际上是用硬件实施的而非软件。1943神经生理学家Warren McCulloch和数学家Walter Pitts写了一篇关于神经潜在工作原理的论文。为了描述脑中的神经元是如何工作的，他们用电路模拟了一个简单的神经网络。</p>
+<p>反向传播（backpropagation）</p>
+<p>反向传播是常见的训练神经网络的方法，通常和某个最优化的方法联合使用，比如梯度下降法。该方法对网络中的某权重设置计算相应的损失函数梯度。然后再用这个梯度信息更新权重设置，持续迭代达到最小化损失函数的作用。</p>
+<p>架构</p>
+<p>多层感知器（Multilayer Perceptron）</p>
+<p>多层感知器（MLP）是一个前馈（feed-forward）人工神经网络模型。恰如其名，MLP由多个节点层级组成，除了初始的输入层级，其余每个层级都和下一个充分连接。也就是说，下一个层级中的每个节点都和之前层级中的每个节点之间有联系。输入层级以外的每个层级节点都是一个神经元（或者处理单元）。MLP就是用之前讲到的反向传播训练神经网络，它是在标准线性感知器基础上的改进，能够识别线性不可分的数据。</p>
+<div class="figure">
+<img src="http://scientistcafe.com/book/Figure/MLP.png" />
+
+</div>
+<p>递归神经网络（recurrent neural network）</p>
+<p>递归神经网络（RNN）是单元间连接能够组成定向圆圈的这类人工神经网络。 <!--this creates an internal state of the network which allows it to exhibit dynamic temporal behavior.
+-->和前馈式神经网络不同，RNN可以通过其形成的内部记忆处理任意指定的一系列输入。这种特性使其适合用于手写识别和语音识别。有一些Twitter机器人用的就是时间递归神经网络（RNN）中的长短期记忆人工神经网络（Long-Short Term Memory, LSTM），比如<code>@DeepDrumpf</code>和<code>@DeepLearnBern</code>，创建者是MIT的Brad Hayes。</p>
+<div class="figure">
+<img src="http://scientistcafe.com/book/Figure/RNN.png" />
+
+</div>
+<p>卷积神经网络（CNN或ConvNet）</p>
+<div class="figure">
+<img src="http://scientistcafe.com/book/Figure/cnn.png" />
+
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="section-13.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/14-shenduxuexi.Rmd",
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
